@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div>
       <Map
-        mapboxAccessToken="pk.eyJ1IjoiaWFtbm90cmVkZHkiLCJhIjoiY2w3amhyOTNmMHlhdzN1cG9sNGptbzhueSJ9.1F6iaOfrxBwF1174T3PX5A"
+        mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_KEY}
         initialViewState={{
           longitude: -122.4,
           latitude: 37.8,
